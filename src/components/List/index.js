@@ -46,6 +46,7 @@ import { useRef } from 'react';
                 onChange={() => handleCheckboxChange(index)}
               />
               <p
+                 className="my-text-style"
                 style={{
                   textDecoration: taskObj.checked ? "line-through" : "none",
                   color: taskObj.checked ? "gray" : "black"
@@ -74,6 +75,7 @@ import { useRef } from 'react';
                 onChange={() => handleCheckboxChange(index)}
               />
               <p
+              className="my-text-style"
                 style={{
                   textDecoration: taskObj.checked ? "line-through" : "none",
                   color: taskObj.checked ? "gray" : "black"
@@ -102,6 +104,7 @@ import { useRef } from 'react';
                 onChange={() => handleCheckboxChange(index)}
               />
               <p
+              className="my-text-style"
                 style={{
                   textDecoration: taskObj.checked ? "line-through" : "none",
                   color: taskObj.checked ? "gray" : "black"
