@@ -34,5 +34,12 @@ html, body, #root {
     height: 70%;
     cursor: pointer;
     border-radius: 4px;
-    
+    background-color: transparent;
+    display: inline-block; 
+    /*bunun sayesinde flex div içerisindeki button elemanlarının 
+    yan yana gelmesi gibi bunu da yan yana gelmelerini sağlar */       
+}
+
+.clear-btn:hover{
+    text-decoration:underline;
 }

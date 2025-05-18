@@ -23,6 +23,7 @@ function Footer({
 
   return (
     <div className="footer-main-div">
+        <div>{tasks.length} item</div>
       <div className="d-grid gap-2 d-md-block component-div">
         <button
           name="All"
@@ -51,16 +52,16 @@ function Footer({
         >
           Completed
         </button>
-        <button
+        <div
           name="Clear"
-          className="btn btn-primary item left-item clear-btn"
+          className="clear-btn"
           type="button"
           onClick={() => {
             setTasks([]);
           }}
         >
           Clear Completed
-        </button>
+        </div>
       </div>
     </div>
   );
