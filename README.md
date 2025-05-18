@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # to do list mini react projem 
 
 
@@ -88,3 +89,7 @@ completed için :
 * veriye yapılacak işleme göre props içeriği tanımlamanın yönetimini yaptım ve bu düşünce sayesinde oldukça kullanılı bir yönetim elde ettim  neredeyse her şeyi state nin yapısına göre yapmayı başardım, mesela verinin checked edildiğini faklı yerde tanımalamk yerine bulunduğu etiketin içindeki input checked olduysa eğer bunun bilgisini state de saklayarak footer div de sadece checked  edilmiş ya da sadece checked edilmemeiş verileri lsitelemek isteğini footer divden göndererel list componentnde bu yapıları kullanarak rahatlıkla filtrelenmiş listelemeyi elde ettim
 
 
+=======
+# todolist-mini-react-project
+patika eğitimi için yaptığım ödev projemdir
+>>>>>>> a960c7c0015e98df1b1cf00c4ab41091b6a8d583
