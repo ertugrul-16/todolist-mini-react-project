@@ -1,0 +1,38 @@
+html, body, #root {
+  height: 100%;
+}
+
+
+.footer-main-div{
+    background-color: transparent;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center; /*dikeyde ortalawr*/
+    justify-content: space-evenly;/* yatayda ortalar */
+    gap: 20px 10px; /* İlk değer row-gap, ikinci değer column-gap */
+    margin-top: 5px;
+    border-radius: 6px;
+}
+
+.component-div{
+    height: 40px;
+}
+
+.item{
+    flex-basis: auto; /* default auto */
+    margin: 5px;
+    height: 70%;
+    border-radius: 4px;
+}
+
+.left-item{
+    left: auto;
+}
+
+.clear-btn{
+    height: 70%;
+    cursor: pointer;
+    border-radius: 4px;
+    
+}

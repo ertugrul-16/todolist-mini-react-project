@@ -1,10 +1,14 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url('./components/images/photo_2025-05-17_19-53-26.jpg');
+    background-size: cover;   /* resmi alanı kaplayacak şekilde büyütür */
+  background-position: center; /* ortalar */
+  
+    padding: 0;
 }
 
 code {

@@ -1,0 +1,24 @@
+.main-div{
+    min-width: 250px;
+    margin: 0 auto; /* 👈 Bu satırla ortalanır */
+    display: flex;
+    flex-direction: column; /*bunlar bu div içindeki verileri üst üste sıralanmasını sağlayacak*/
+    justify-content: center;
+    margin-top: 50%;
+    background-color: rgba(70, 68, 67, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+.todos-tablo > h1{
+  font-family: Arial, Helvetica, sans-serif; /* sade ve okunaklı yazı tipi */
+  font-weight: 600; /* biraz kalın */
+  color: #d8a0a7; /* hafif tozlu pembe renk */
+  text-shadow: 1px 1px 2px rgba(216, 160, 167, 0.5); /* hafif gölge */
+  font-size: 60px;
+}
+
+
+
+

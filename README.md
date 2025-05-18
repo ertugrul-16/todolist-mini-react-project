@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# to do list mini react projem 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+bu projede kişi yapacağı görevleri veya işleri input kısmında yazıp gönderir ve daha sonra to do 
+listesi dolamya başlar ve aşağıda sıralanır 
 
-In the project directory, you can run:
+# todo list projesinin temel özellikleri 
 
-### `npm start`
+* görev ekleyebilirsin 
+* eklediğin görevleri işaretleyerek yapıldı şeklinde gösterip üstünü çizebilirsin
+* yaptığın görevleri silebilirsin 
+* tüm görevleri listeleyebilirsin
+* sadece yapılmamış görevleri lsiteleyebilirsin
+* sadece yapılmış görevleri listeleyebilirsin
+* tüm görevleri tek aşamada silebilirsin
+* görevlerin gösterildiği pencereyi açıp kapayabilirsin
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# proje taslağı 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![1](./src/components/images/1.png)
 
-### `npm run build`
+proje taslağında ana kısmı oluşturan 3 component oluşturulmuştur. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+en üstteki component  --> inputComponent
+ortadaki listelenenleri göstereceğimiz component   --> ListComponent
+en aşağıda footer bilgilerini göstereceğimiz compnent --> footerComponent
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+tüm verileri ortalamak için hepsini kapsayacak content componenti oluşturuldu 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+form işlemleri hepsini kaplayan content işlemlerinde yapmak daha mantıklı olacaktır çünkü inputtan girilen veri farklı copmonentlerde kullanılmak üzere dağıtılıyor yani state ler orada bağlantı kuruyor o yüzden en ana ksıımda bunları yapmak daha mantıklı olur 
 
-### `npm run eject`
+baktığımız zaman : 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+tüm görevleri tutan içinde dizi bulunduran dizi  yapılacak verileri içinde tutuyor ve bu bilgiler 
+hem input componentte  hem list componentte  hem de footer componentte kullanılıyor. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* inputta veriler aktarılıyor 
+* list te veriler listeleniyor
+* footer de içindeki butonların kuralına göre listelenecek verilerin gözükmesini yapıyor 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![2](./src/components/images/2.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# eklemeler 
 
-## Learn More
+* alt bileşenler (footer component için) :all - active completed - clear completed butonları eklendi :
+ bu butonlar isimlerinden de anlaıldığı üzere hangi görevler listelenmesini düzenlemek  için eklendi
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ ![alt text](image-1.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ her biri istenen doğrultuda verielri listelemeyi yarıyor 
 
-### Code Splitting
+ all için : 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![alt text](image-4.png)
 
-### Analyzing the Bundle Size
+active için : 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![alt text](image-5.png)
 
-### Making a Progressive Web App
+completed için : 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![alt text](image-6.png)
 
-### Advanced Configuration
+* eklenen her görevin bileşeni için silme (x) button u eklendi ve tıklayınca silebiliyoruz
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![alt text](image-2.png)
 
-### Deployment
+* tüm listelenen bileşenleri göster / gizle  button u eklenerek istediğimizde gizleyebiliyoruz 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![alt text](image.png)
+ 
+* proje bitmiş hali taslağı :
 
-### `npm run build` fails to minify
+![alt text](image-7.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+ //////////
+
+ projeden yaptığım çıkarımlar 
+ * props ve state yönetimini çok iyi kavradım 
+ * verileri işlemeyi çok iyi öğrendim
+ * component bileşenlerini yöentmeyi iyi kavradım 
+ * props tanımlama yönünden kullanım yerlerine göre hangi yerde hiyerarşik sıralamada tanımlanması gerektiğini iyi kavradım 
+* jsx tanımalmasına göre koşullu yazımları yazmayı iyi kavradım 
+* bir projede dosyanın hiyerarşik yönetiminin nasıl sağlandığını iyi öğrendim
+* veriye yapılacak işleme göre props içeriği tanımlamanın yönetimini yaptım ve bu düşünce sayesinde oldukça kullanılı bir yönetim elde ettim  neredeyse her şeyi state nin yapısına göre yapmayı başardım, mesela verinin checked edildiğini faklı yerde tanımalamk yerine bulunduğu etiketin içindeki input checked olduysa eğer bunun bilgisini state de saklayarak footer div de sadece checked  edilmiş ya da sadece checked edilmemeiş verileri lsitelemek isteğini footer divden göndererel list componentnde bu yapıları kullanarak rahatlıkla filtrelenmiş listelemeyi elde ettim
+
+
